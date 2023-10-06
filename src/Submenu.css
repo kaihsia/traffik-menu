@@ -1,0 +1,106 @@
+.submenu {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #FFF;
+    width: 365px;
+    height: 900px;
+    padding-left: 30px;
+    padding-top: 26px;
+    z-index: 6;
+}
+
+.shop-all {
+    display: flex;
+    height: 34px;
+    padding: 0px 20px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid #2D2C70;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+    color: var(--main-brand-color-primary-flagship-purple-500, #2D2C70);
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+}
+
+.submenu-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    color: var(--text-colors-500, #3E4147);
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+.food-image {
+    width: 274px;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: url('./Category-image.png'), lightgray 50% / cover no-repeat;
+    margin-top: 32px;
+    margin-left: 30px;
+    margin-bottom: 34px;
+}
+.food {
+    display: flex;
+    width: 274px;
+    padding-bottom: 0px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--text-colors-100, #E4E4E4);
+}
+
+.food span {
+    color: var(--text-colors-500, #3E4147);
+    font-family: Plus Jakarta Sans;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@keyframes hideSubNav {
+    from {
+        left: 30%;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes showSubNav {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 30%;
+    }
+}
+
+.showSubNav {
+    animation: showSubNav 1s ease forwards;
+}
+
+.hideSubNav {
+    animation: hideSubNav 1s ease forwards;
+}

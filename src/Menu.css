@@ -1,0 +1,79 @@
+.menu {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #FFF;
+    width: 302px;
+    height: 900px;
+    padding-left: 16px;
+    padding-top: 26px;
+    z-index: 7;
+    border-right: 1px solid var(--text-colors-100, #E4E4E4);
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    color: var(--text-colors-500, #3E4147);
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    margin-left: 27px;
+    padding-top: 20px;
+}
+
+.back-icon {
+    width: 15.108px;
+    height: 24px;
+    flex-shrink: 0;
+    fill: var(--text-colors-500, #3E4147);
+}
+
+.categories {
+    display: inline-flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.categories span {
+    color: var(--text-colors-500, #3E4147);
+    /* Heading/H6 */
+    font-family: Plus Jakarta Sans;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@keyframes hideNav {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes showNav {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.showNav {
+    animation: showNav 1s ease forwards;
+}
+
+.hideNav {
+    animation: hideNav 1s ease forwards;
+}
