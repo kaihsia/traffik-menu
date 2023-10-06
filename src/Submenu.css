@@ -98,9 +98,11 @@
 }
 
 .showSubNav {
+    visibility: visible;
     animation: showSubNav 1s ease forwards;
 }
 
 .hideSubNav {
+    visibility: hidden;
     animation: hideSubNav 1s ease forwards;
 }

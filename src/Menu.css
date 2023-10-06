@@ -71,9 +71,11 @@
 }
 
 .showNav {
+    visibility: visible;
     animation: showNav 1s ease forwards;
 }
 
 .hideNav {
+    visibility: hidden;;
     animation: hideNav 1s ease forwards;
 }
