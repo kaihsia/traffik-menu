@@ -10,6 +10,7 @@
     padding-left: 30px;
     padding-top: 26px;
     z-index: 6;
+    visibility: hidden;
 }
 
 .shop-all {
@@ -81,7 +82,7 @@
 
 @keyframes hideSubNav {
     from {
-        left: 30%;
+        left: 20%;
     }
     to {
         left: -100%;
@@ -93,7 +94,7 @@
         left: -100%;
     }
     to {
-        left: 30%;
+        left: 20%;
     }
 }
 
@@ -103,6 +104,5 @@
 }
 
 .hideSubNav {
-    visibility: hidden;
     animation: hideSubNav 1s ease forwards;
 }
